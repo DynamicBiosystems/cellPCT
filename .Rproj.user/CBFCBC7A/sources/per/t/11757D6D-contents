@@ -1,0 +1,164 @@
+##############################################
+###        CellPCT package development     ###
+##############################################
+
+remove.packages('BiocManager')
+install.packages("BiocManager")
+
+remove.packages('cellPCT')
+
+remotes::install_github("ricardo-bion/ggradar")
+
+BiocManager::install("ComplexHeatmap")
+
+remotes::install_github("jokergoo/ComplexHeatmap")
+
+install.packages(pkgs='../../../../../../software/ComplexHeatmap_2.16.0.tar.gz',repos = NULL,dependencies = T)
+
+install.packages('GetoptLong')
+install.packages('clue')
+
+install.packages('IRanges')
+BiocManager::install("IRanges")
+install.packages(pkgs='../../../../../../software/IRanges_2.34.1.tar.gz',repos = NULL,dependencies = T)
+BiocManager::install("BiocGenerics")
+#install.packages('BiocGenerics')
+BiocManager::install("S4Vectors")
+install.packages('S4Vectors')
+
+
+install.packages('matrixStats')
+BiocManager::install("matrixStats")
+
+install.packages('foreach')
+BiocManager::install("foreach")
+
+install.packages('doParallel')
+BiocManager::install("doParallel")
+
+
+
+install.packages(pkgs='../cellPCT_0.2.0.tar.gz',repos = NULL,dependencies = T)
+
+library(cellPCT)
+
+input='../Integration.Annotation_SeuratObject.rds'
+outdir='D:/work/Pipeline/Development/Soupx/CellPCT/R package/test/test_1.1'
+
+plot_all(input,outdir)
+
+plot_sankey('../data/sankey_data.txt','../test/txt','sample','cell.type')
+
+
+cellPCT::
+
+
+
+data <- read.table('../data/sankey_data.txt', header = T, sep = '\t')
+
+unique(c('sample','cell.type','ratio') %in% colnames(data)) == F
+
+
+
+
+data <- read.csv('../../data.csv', header = T, sep = ',')
+
+colnames(data) <- c('cell_type','sample1','sample2','sample3','sample4')
+
+example_data <-data
+
+
+
+
+circle_data <- read.table('../data/circle_data.txt',
+                          sep = '\t',header = T)
+head(circle_data)
+
+usethis::use_data(circle_data)
+
+donut_data <- read.table('../data/donut_data.txt',
+                         sep = '\t',header = T)
+
+usethis::use_data(donut_data)
+
+sankey_data <- read.table('../data/sankey_data.txt',
+                         sep = '\t',header = T)
+
+usethis::use_data(sankey_data)
+
+stackbar_data <- read.table('../data/stackbar_data.txt',
+                            sep = '\t',header = T)
+
+usethis::use_data(stackbar_data)
+
+stackline_data <- read.table('../data/stackline_data.txt',
+                             sep = '\t',header = T)
+usethis::use_data(stackline_data)
+
+data <- readRDS("../Integration.Annotation_SeuratObject.rds")
+
+
+plot_sankey('../data/sankey_data.txt','../test/txt','plot_sample','plot_cell_type')
+
+read.table('../data/sankey_data.txt', header = T, sep = "\t")
+
+
+
+
+install.packages("BiocManager")
+
+BiocManager::install("ggplot2")
+BiocManager::install("dplyr")
+BiocManager::install("ggalluvial")
+BiocManager::install("Seurat")
+install.packages('Seurat')
+
+BiocManager::install("remotes")
+install.packages('remotes')
+
+
+
+# plot_sankey
+
+setwd("/disk/test/xyf_test_23.7.5")
+
+suppressMessages(suppressWarnings(library(ggplot2)))
+suppressMessages(suppressWarnings(library(dplyr)))
+suppressMessages(suppressWarnings(library(ggalluvial)))
+
+data <- readRDS("../Integration.Annotation_SeuratObject.rds")
+
+
+
+plot_data <- data@meta.data %>% group_by(sample,cell.type) %>% summarise(n=n()) %>% mutate(ratio =n/sum(n))
+plot <-ggplot(plot_data,aes(x = sample, y = ratio, fill = cell.type,
+                            stratum = cell.type, alluvium = cell.type)) +
+  geom_col(width = 0.5, color = 'black') +
+  geom_flow(width = 0.5, alpha = 0.4, knot.pos = 0.5)+
+  theme_classic() +
+  labs(x = 'Sample',y = 'ratio') +
+  coord_flip()
+ggsave('cell_ratio.png',plot,width=10,height=10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
