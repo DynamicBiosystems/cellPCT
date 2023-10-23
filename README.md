@@ -30,7 +30,7 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 ## 1.3 Install from github
 
-`devtools::install_github('')`
+`devtools::install_github('DynamicBiosystems/cellPCT')`
 
 
 
