@@ -107,15 +107,15 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_sankey(example_data, coord_flip = T)`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Sankey_show1.png' width =60%, height=60%>
+<div align=center><img src='./plot/Cell_Type_Ratio_Sankey_show1.png' width =60%, height=60%></div>
 
 `plot_sankey(example_data, sub_sample = c('S1','S2','S3'),coord_flip = F)`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Sankey_show3.png' width =60%, height=60%>
+<div align=center><img src='./plot/Cell_Type_Ratio_Sankey_show3.png' width =60%, height=60%></div>
 
 `plot_sankey(example_data,sub_sample = c('S1','S3'),sub_type = c('NK cells','B cells','T cells','Monocytes'), coord_flip = T)`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Sankey_show2.png' width =60%, height=60%>
+<div align=center><img src='./plot/Cell_Type_Ratio_Sankey_show2.png' width =60%, height=60%></div>
 
 
 
@@ -130,15 +130,15 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_stackbar(example_data)`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Stackbar_show1.png' width =60%, height=60%>
+<div align=center><img src='./plot/Cell_Type_Ratio_Stackbar_show1.png' width =60%, height=60%></div>
 
 `plot_stackbar(example_data,group = T)`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Stackbar_show2.png' width =60%, height=60%>
+<div align=center><img src='./plot/Cell_Type_Ratio_Stackbar_show2.png' width =60%, height=60%></div>
 
 `plot_stackbar(example_data, sub_sample = c('S3','S4'), sub_type = c('NK cells','B cells','T cells','Monocytes'), order_sample = c('S4','S3'), order_type = c('T cells','B cells','Monocytes','NK cells')`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Stackbar_show3.png' width =60%, height=60%>
+<div align=center><img src='./plot/Cell_Type_Ratio_Stackbar_show3.png' width =60%, height=60%></div>
 
 
 
@@ -155,11 +155,11 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_stackline(example_data)`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Stackline_show1.png' width =70%, height=70%>
+<div align=center><img src='./plot/Cell_Type_Ratio_Stackline_show1.png' width =70%, height=70%></div>
 
 `plot_stackline(example_data, sub_sample = c('S1','S2'))`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Stackline_show2.png' width =50%, height=50%>
+<div align=center><img src='./plot/Cell_Type_Ratio_Stackline_show2.png' width =50%, height=50%></div>
 
 
 
@@ -174,11 +174,11 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_circle(example_data, sub_sample = c('S1'), lab = T)`
 
-<div align=center><img src='./plot/Cell_Type_Circle_show1.png' width =65%, height=65%>
+<div align=center><img src='./plot/Cell_Type_Circle_show1.png' width =65%, height=65%></div>
 
 `plot_circle(example_data, sub_sample = c('S1'),sub_type = c('NK cells','B cells','T cells','Monocytes'), lab = F)`
 
-<div align=center><img src='./plot/Cell_Type_Circle_show2.png' width =65%, height=65%>
+<div align=center><img src='./plot/Cell_Type_Circle_show2.png' width =65%, height=65%></div>
 
 
 
@@ -193,11 +193,11 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_singledonut(example_data, lab = F)`
 
-<div align=center><img src='./plot/Cell_Type_singledonut_show1.png' width =80%, height=80%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_singledonut_show1.png' width =80%, height=80%, style="background: white"></div>
 
 `plot_singledonut(example_data, sub_sample = c('S1','S4'), min_percent = 5, lab = T)`
 
-<div align=center><img src='./plot/Cell_Type_singledonut_show2.png' width =70%, height=70%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_singledonut_show2.png' width =70%, height=70%, style="background: white"></div>
 
 
 
@@ -212,11 +212,11 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_mutidonut(example_data, lab = F)`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_mutidonut_show1.png' width =70%, height=70%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_Ratio_mutidonut_show1.png' width =70%, height=70%, style="background: white"></div>
 
 `plot_mutidonut(example_data,min_percent = 5, lab = T)`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_mutidonut_show2.png' width =70%, height=70%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_Ratio_mutidonut_show2.png' width =70%, height=70%, style="background: white"></div>
 
 
 ## 3.7 Rose plot
@@ -229,7 +229,7 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_rose(example_data, sub_sample = c('S1'))`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Rose_show1.png' width =90%, height=90%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_Ratio_Rose_show1.png' width =90%, height=90%, style="background: white"></div>
 
 
 
@@ -244,7 +244,7 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_treemap(example_data, sub_sample = c('S1'))`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Treemap_show1.png' width =90%, height=90%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_Ratio_Treemap_show1.png' width =90%, height=90%, style="background: white"></div>
 
 
 
@@ -259,11 +259,11 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_radar(example_data)`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Radar_show1.png' width =80%, height=80%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_Ratio_Radar_show1.png' width =80%, height=80%, style="background: white"></div>
 
 `plot_radar(example_data,sub_sample = c('S1','S3'), sub_type = c('NK cells','B cells','T cells','Monocytes'))`
 
-<div align=center><img src='./plot/Cell_Type_Ratio_Radar_show2.png' width =80%, height=80%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_Ratio_Radar_show2.png' width =80%, height=80%, style="background: white"></div>
 
 
 
@@ -278,11 +278,11 @@ This package provide multiple visualizations for scRNA-seq cell type ratio. Incl
 
 `plot_multicircle(example_data,outdir = './save/',sub_type = c('NK cells','Monocytes','B cells','Neutrophils','T cells','Monocytes_pseudo'))`
 
-<div align=center><img src='./plot/Cell_Type_Multicircle_show1.png' width =80%, height=80%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_Multicircle_show1.png' width =80%, height=80%, style="background: white"></div>
 
 `plot_multicircle(example_data, sub_sample = c('S1','S4'), sub_type = c('NK cells','Monocytes','B cells','Neutrophils','T cells','Monocytes_pseudo'), outdir = './save/')`
 
-<div align=center><img src='./plot/Cell_Type_Multicircle_show2.png' width =80%, height=80%, style="background: white">
+<div align=center><img src='./plot/Cell_Type_Multicircle_show2.png' width =80%, height=80%, style="background: white"></div>
 
 
 ## Changelog
