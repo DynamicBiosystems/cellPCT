@@ -1,6 +1,6 @@
 # **cellPCT**
 
-An R package for Multi-visualization of single-cell RNA-seq cell type.
+An R package that uses various visualization graphics to display the proportion of cell types in different samples of single-cell transcriptome.
 
 This package provide multiple visualizations for scRNA-seq cell type ratio. Including sankey plot, stackbar plot, stackline plot, multidonut plot, singledonut plot, circle plot, rose plot, treemap plot, radar plot and milticircle plot. Each plot type can choose multi parameters to fit users' demands. Like label showing, coord flip, hide cell type which ratio less assigned value, order the group and cell type for plotting, et al. More details please see the description of 'plot_xx' functions.
 
